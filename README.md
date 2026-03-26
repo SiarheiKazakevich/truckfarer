@@ -1,1 +1,1 @@
-# truckfarer
+https://siarheikazakevich.github.io/truckfarer/ 

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #333;
+  color: white;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  background-image: url('../photos/logo2.png');
+  background-size: cover;
+  background-position: center;
+  margin-right: -10px;
+  margin-right: -10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(16px, 5vw, 48px);
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #444;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+nav.active {
+  left: 0;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/*-----------------адаптация---------------*/
+@media (max-width: 768px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
