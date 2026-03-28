@@ -177,6 +177,11 @@ button:hover {
   transform: scale(1.2);
 }
 
+.footertext {
+  font-size: 16px;
+  color: white;
+}
+
 /*-----------------адаптация---------------*/
 @media (max-width: 768px) {
   .logo {
