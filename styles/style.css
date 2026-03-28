@@ -10,6 +10,8 @@ header {
   padding: 15px 20px;
   background: #333;
   color: white;
+  position: relative;
+  z-index: 1002;
 }
 
 .logo {
@@ -32,7 +34,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  z-index: 1001;
+  z-index: 1003;
 }
 
 .burger div {
@@ -41,15 +43,36 @@ h1 {
   background: white;
   transition: 0.3s;
 }
-.burger.active div:nth-child(1){
+
+.burger.active div:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .burger.active div:nth-child(2) {
-      opacity: 0;
-    }
+  opacity: 0;
+}
+
 .burger.active div:nth-child(3) {
-      transform: rotate(-45deg) translate(6px, -6px);
-    }
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 
 nav {
   position: fixed;
@@ -60,7 +83,7 @@ nav {
   background: #444;
   padding-top: 60px;
   transition: 0.3s;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 nav a {
@@ -68,10 +91,14 @@ nav a {
   padding: 15px;
   color: white;
   text-decoration: none;
+  margin: 100px 0px 0px 0px;
+  text-align: center;
+
 }
- nav a:hover {
-      background: #555;
-    }
+
+nav a:hover {
+  background: #555;
+}
 
 nav.active {
   left: 0;

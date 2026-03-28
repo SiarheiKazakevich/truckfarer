@@ -1,8 +1,10 @@
 function toggleMenu() {
   const menu = document.getElementById('menu');
-  const burger = document.getElementById('burger')
+  const burger = document.getElementById('burger');
+  const overlay = document.getElementById('overlay');
   menu.classList.toggle('active');
   burger.classList.toggle('active');
+  overlay.classList.toggle('active');
 }
 
 function go(n) {
