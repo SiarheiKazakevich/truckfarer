@@ -10,13 +10,16 @@
   <meta property="og:url" content="https://siarheikazakevich.github.io/truckfarer/">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/style2.css">
   <link rel="icon" href="./photos/logo2.webp" type="icon">
   <title>truckfarer</title>
 </head>
 
 <body>
-  <header>
-    <div class="logo"></div>
+  <header class="header">
+    <a href="index.html#home">
+      <div class="logo"></div>
+    </a>
     <h1>Maps for truckdriver</h1>
     <div class="burger" id="burger" onclick="toggleMenu()">
       <div class="t"></div>
@@ -26,26 +29,13 @@
   </header>
   <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
   <nav id="menu">
-    <a class="menulink1" href="index2.html#QRcode">QR-code сайта</a>
+    <a class="menulink1" href="index.html#home">Главная</a>
     <!--<a href="">О нас</a>-->
     <a class="menulink" href="https://siarheikazakevich.github.io/discountCards/">скидочные карты</a>
-
     <!--<a href="">Контакты</a>-->
   </nav>
-  <div class="container" id="home">
-    <button onclick="go(1)">Карта со всеми парковками</button>
-    <button onclick="go(2)">Карта магазинов с возможностью подъехать на грузовике</button>
-    <button onclick="go(3)">Outlet(Аутлеты)</button>
-    <button onclick="go(4)">Autohof</button>
-    <button onclick="go(5)">Карта DKV</button>
-    <button onclick="go(6)">Карта DKV 2</button>
-    <button onclick="go(7)">Карта заправки газовых баллонов</button>
-    <button onclick="go(8)">Карта бесплатных душей</button>
-    <button onclick="go(9)">Карта мест в промзоне</button>
-    <button onclick="go(10)">Карта стиральных машин</button>
-    <button onclick="go(11)">МЕГА КАРТА ПО ЕВРОПЕ</button>
-    <button onclick="go(12)">Паркинг рядом с водоемом</button>
-    <!--<button onclick="go(13)">Место 13</button>-->
+  <div class="containerwraper" id="QRcode">
+    <div class="container2"></div>
   </div>
 
   <footer class="footer">

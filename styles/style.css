@@ -98,7 +98,7 @@ nav a {
   padding: 15px;
   color: white;
   text-decoration: none;
-  margin: 100px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   text-align: center;
 
 }
@@ -111,6 +111,11 @@ nav.active {
   left: 0;
 }
 
+.menulink1 {
+  margin: 130px 0px 0px 0px;
+}
+
+.menulink1:hover,
 .menulink:hover {
   color: #0056b3;
 }
