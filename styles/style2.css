@@ -35,3 +35,11 @@ body {
   height: 50vh;
   margin: 30px 0px 0px 0px;
 }
+
+/*-----------------адаптация---------------*/
+@media (max-width: 768px) {
+  .container2 {
+    width: 75vw;
+    height: 75vh;
+  }
+}
